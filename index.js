@@ -3,7 +3,7 @@ const app = express();
 const Datastore = require('nedb');
 const nodemailer = require('nodemailer');
 
-app.listen(3000, () => console.log('escucho puerto 3000'));
+app.listen(process.env.PORT || 5000);
 
 app.use(express.static('public'));
 app.use(express.json({limit:'1mb'}));
