@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+    <title>nuevaApp</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+   integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+   crossorigin=""></script>
+   <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+   integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+   crossorigin=""></script>
+   
+</head>
+<body>
+  <nav id="centered" class="navbar navbar-dark navbar-expand-lg sticky-top">
+    <div class="container">
+    <span class="navbar-brand"><a href="/">NICOLAS CAGIAO</a></span>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    
+    <button class="dropbtn"><a href="/" alt="Formulario de contacto">Contacto</a></button>
+    <div class="dropdown">
+      <button class="dropbtn">Proyectos<i></i></button>
+      <div class="dropcontent">
+        <a href="/proyects/buscador">Buscador de periodistas</a>
+        <a href="/proyects/location">Geo.ME!</a>
+        <a href="/proyects/binarizate">Binarizate!</a>
+      </div>
+     </div>
+     <div class="dropdown2">
+     <button class="dropbtn">Bajar CV</button>
+      <div class="dropcontent">
+        <div class="row">
+        <div class="col">
+        <span>Español</span>
+          <a href="\docs\NicolasCagiao_CV.pdf">PDF</a>
+          <a href="\docs\NicolasCagiao_CV.docx">.Doc</a></span>
+        </div>
+        <div class="col">
+        <span>English</span>
+          <a href="\docs\NicolasCagiao_Resume.pdf">PDF</a>
+          <a href="\docs\NicolasCagiao_Resume.docx">.Doc</a></span>
+        </div>     
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>  
+  </nav>
+    <div class="container-fluid">
+   
+        <div id="centered">
+        <h1>Donde estoy?</h1>
+        <div class="mb-5">
+        <p>Latitud: <span id="latitud"></span>&deg;<br/>
+            Longitud: <span id="longitud"></span>&deg;
+        </p>
+    </div>
+        <button id="loc">Dame mis coordenadas!</button>
+        
+        
+    </div>
+    <div id="mapid" class="mt-5"></div>
+    </div>
+  
+
+    
+
+</body>
+<script src="location.js"></script>
+</html>

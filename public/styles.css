@@ -1,0 +1,218 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.contenedor{
+    animation-name: fading;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.5s; 
+    transition: transform 0.5s;
+}
+
+.name{
+    font-weight: bold;
+    text-align: center;
+    padding: 0%;
+    font-size: 75%;
+}
+
+p{
+    margin-bottom: 0%;
+}
+.avatar {
+    border-radius: 15%;
+    
+}
+.contenedor:hover {
+    transform: scale(1.05);
+ }
+ 
+.medio{
+    padding-top: 1em;
+}
+
+.fullDisplay{
+    display: block;
+    animation-name: fading;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s; 
+    transition: transform 0.5s;
+}
+
+#loadingCat{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 190px;
+    height: 90px;
+    text-align: center;
+    margin-top: -50px;
+    margin-left: -100px;
+    animation-name: fading;
+    animation-duration: 2s; 
+    transition: transform 2s;
+}
+
+#centered {
+    text-align: center;
+    animation-name: fading;
+    animation-duration: 2s; 
+    transition: transform 2s;
+}
+
+@keyframes fading {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+  }
+
+#mapid { height: 500px; width: 100%;}
+
+
+nav{
+    background-color:black;
+}
+nav a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+nav span a{
+    color: slateblue;
+}
+
+a:hover{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.dropbtn {
+    margin-left: 20px;
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown2 {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropcontent {
+    display: none;
+    position: absolute;
+    left: 20px;
+    top: 50px;
+    background-color: #f1f1f1;
+    min-width: 240px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+    
+  .dropcontent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  
+  .dropcontent a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropcontent {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: slateblue;}
+
+  .dropdown2:hover .dropcontent {display: block;}
+  
+  .dropdown2:hover .dropbtn {background-color: slateblue;}
+  
+  .dropbtn:hover{background-color: slateblue;}
+
+  .tech img{
+      width: auto;
+      height: 40px;
+      margin: 2em;
+  }
+  .tech{
+      align-items: center;
+      width: auto;
+  }
+
+  .datos{
+      font-weight: bolder;
+      font-size: 2em;
+  }
+
+  .datos h1{
+      font-size: 1em;
+  }
+
+  .dropcontent span a{
+      display: flex;
+  }
+
+  section img {
+      width: 100%;
+
+  }
+
+
+  .social a{
+    margin:5px 5px;
+  }
+  .social i{
+  text-align: center;
+  justify-content:center;
+  }
+  
+  .far{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  }
+  .fab{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  }
+  
+  .fab:hover {
+      opacity: 0.7;
+  }
+  
+  .far:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    color: #4267B2;
+    
+  }
+  
+  .fa-twitter {
+    color: #55ACEE;
+    
+  }
+  
+  .fa-github {
+    color:black;
+    
+  }
+  
+  .fa-instagram {
+    color:#e1306c;
+    
+  }
+  
+  .fa-codepen {
+    color:grey;
+    
+  }
+  
+  .fa-linkedin {
+    color: #25B2AF;
+   
+  }
