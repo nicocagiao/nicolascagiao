@@ -3,12 +3,16 @@ const app = express();
 const Datastore = require('nedb');
 const nodemailer = require('nodemailer');
 
+
+
 app.listen((process.env.PORT || 5000), function(){
     console.log('listening on *:5000');
   });
 
 app.use(express.static('public'));
+
 app.use(express.json({limit:'1mb'}));
+ 
 
 const lDatabase = new Datastore('LDatabase.db');
 lDatabase.loadDatabase();
