@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="../../styles.css">
-    
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
@@ -32,10 +31,10 @@
         <a href="/proyects/binarizate">Binarizate!</a>
       </div>
      </div>
-     <div class="dropdown2">
+     <div class="dropdown">
      <button class="dropbtn">Bajar CV</button>
       <div class="dropcontent">
-        <div class="row">
+        
         <div class="col">
         <span>Español</span>
           <a href="\docs\NicolasCagiao_CV.pdf">PDF</a>
@@ -45,7 +44,7 @@
         <span>English</span>
           <a href="\docs\NicolasCagiao_Resume.pdf">PDF</a>
           <a href="\docs\NicolasCagiao_Resume.docx">.Doc</a></span>
-        </div>     
+            
         </div>
       </div>
     </div>
@@ -55,14 +54,25 @@
     
     <h1>B1NAR1ZATE!</h1>
     
-<div class="caja">
-    <div class="desc"><span>Convertir números enteros a binario</span></div>
-    <input id=numero type="number" min="0"></input>
-    <button id=boton>Transformar!</button>
-    <div id=resultado></div>
+<div class="caja mb-5">
+  <input id="texto" type="text"></input>
+  <button id="boton1">Texto a binario</button>
+  <div id="resultado1"></div>
 </div>
+
+<div class="caja">
+  <input id="binario" type="number" min="0"></input>
+  <button id="boton2">Binario a texto</button>
+  <div id="resultado2"></div>
+</div>
+
+
 <div class="autor"><p>Hecho con &#128150 by <a href="https://github.com/nicocagiao">Nico</a></p></div>
+
+
     <script src="script.js"></script>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </html>
 
