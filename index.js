@@ -110,8 +110,9 @@ app.post('/send', (request, response)=> {
       return console.log(error);
     }
     console.log("Message sent: %s", info.messageId);
-    response.render({msg: 'Email enviado!'});
-  });    
+    
+  }); 
+  response.render("/",{msg: 'Email enviado!'});   
  });
 
 
