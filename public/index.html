@@ -91,8 +91,8 @@
 <hr>
 <div class="container col-lg-5" id="centered">
 
-<form method="POST" action="send">
-   <div class="form-group">
+<form method="POST" action="mail">
+  <div class="form-group">
     <input type="text" class="form-control" placeholder="Nombre" alt="Nombre" name="nombre" required>
   </div>
   <div class="form-group">
@@ -102,6 +102,12 @@
     <textarea class="form-control" rows="3" alt="mensaje" name="mensaje" placeholder="Mensaje"></textarea>
   </div>
   <button type="submit" class="btn btn-primary mb-2">Enviar</button>
+  <div class="alert alert-primary alert-dismissible fade show hidden" role="alert">
+    <strong>Mensaje enviado. Gracias!</strong>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
 </form>
 </div>
 <footer class="container">

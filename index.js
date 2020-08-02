@@ -78,7 +78,7 @@ app.post('/api1', (request, response) => {
     });
 });
 
-app.post('/send', (request, response)=> {
+app.post('/mail', (request, response)=> {
   const output = `
     <p>Nuevo Mensaje desde nicolascagiao.com</p>
      <ul>  
@@ -105,14 +105,12 @@ app.post('/send', (request, response)=> {
     html: output,
   };
 
-  transporter.sendMail(mailOptions,(error, info) =>{
-    if(error){
-      return console.log(error);
-    }
-    console.log("Message sent: %s", info.messageId);
-    
-  }); 
-  response.render("/",{msg: 'Email enviado!'});   
+  transporter.sendMail(mailOptions, function (err, info) {
+    if(err)
+      console.log(err)
+    else
+      response.redirect("/");
+ }); 
  });
 
 
