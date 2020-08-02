@@ -90,20 +90,22 @@
 </div>
 <hr>
 <div class="container col-lg-5" id="centered">
-<form>
-  <div class="form-group">
-    <input type="text" class="form-control" placeholder="Nombre" alt="Nombre" required>
+
+<form method="POST" action="send">
+   <div class="form-group">
+    <input type="text" class="form-control" placeholder="Nombre" alt="Nombre" name="nombre" required>
   </div>
   <div class="form-group">
-    <input type="email" class="form-control" placeholder="Email" alt="email" required>
+    <input type="email" class="form-control" placeholder="Email" alt="email" name="email" required>
   </div>
   <div class="form-group">
-    <textarea class="form-control" rows="3" alt="mensaje" placeholder="Mensaje"></textarea>
+    <textarea class="form-control" rows="3" alt="mensaje" name="mensaje" placeholder="Mensaje"></textarea>
   </div>
   <button type="submit" class="btn btn-primary mb-2">Enviar</button>
 </form>
 </div>
 <footer class="container">
+
   <!-- <div id="centered">
     <p>Este sitio fue hecho con</p>
       <div class="tech">
